@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'googleMapTest.dart';
 
 void main() {
   runApp(const MyApp());
@@ -111,6 +112,15 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const GoogleMapPageRoute()),
+                );
+              },
+              child: Text("Google Map Page"), 
             ),
           ],
         ),
