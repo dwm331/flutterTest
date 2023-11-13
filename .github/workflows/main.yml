@@ -42,7 +42,7 @@ jobs:
           sudo npm install -g yarn
 
       - name: Install Dependencies with Yarn
-        run: yarn install yarn install --frozen-lockfile --network-concurrency 1
+        run: yarn install --frozen-lockfile --network-concurrency 1
 
       - name: Build
         run: flutter build web --base-href /flutterTest/
