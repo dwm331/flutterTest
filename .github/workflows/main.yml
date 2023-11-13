@@ -37,6 +37,13 @@ jobs:
       - name: Download Dependencies
         run: flutter pub get
 
+      - name: Install Yarn
+        run: |
+          sudo npm install -g yarn
+
+      - name: Install Dependencies with Yarn
+        run: yarn install
+
       - name: Build
         run: flutter build web
 
