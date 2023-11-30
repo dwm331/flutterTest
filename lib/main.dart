@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   MaterialPageRoute(builder: (context) => const GoogleMapPageRoute()),
                 );
               },
-              child: Text("Google Map Page"), 
+              child: const Text("Google Map Page"), 
             ),
           ],
         ),

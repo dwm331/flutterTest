@@ -21,14 +21,14 @@ class SpotInfoBox extends StatelessWidget {
                       fontWeight: FontWeight.bold, fontSize: 16.0),
                   textAlign: TextAlign.left,
                 ),
+                Text(spot.opentime,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 14.0),
+                    textAlign: TextAlign.left),
                 Text(spot.address,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 14.0),
                     textAlign: TextAlign.left),
-                Text('${spot.distance.toString()} km',
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 14.0),
-                    textAlign: TextAlign.left)
               ],
             )
           ],
